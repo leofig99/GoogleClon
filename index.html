@@ -1,0 +1,121 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
+}
+
+.header a {
+  margin-right: 20px;
+  text-decoration: inherit;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 15px;
+}
+
+
+
+.header__right {
+  display: flex;
+  margin-left: auto;
+  min-width: 13vw;
+  justify-content: space-between;
+}
+
+.header__right .header__apps {
+  margin-right: 10px;
+}
+.mainBody {
+  flex: 1;
+  display: flex;
+  margin-top: 12%;
+  flex-direction: column;
+}
+
+.mainBody img {
+  object-fit: contain;
+  height: 100px;
+}
+
+.busqueda {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  height: 30px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 560px;
+}
+
+.busqueda input {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+}
+
+.busqueda .material-icons {
+  color: gray;
+}
+
+.busqueda_botones {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.busqueda_botones button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #f8f8f8;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+    </style>
+    <title>Final - Google Clone</title>
+  </head>
+  <body>
+    <div class="header">
+      
+      <div class="header__right">
+        <a href="#">Gmail</a>
+        <a href="#">Imagenes</a>
+        <span class="material-icons header__apps"> apps </span>
+        <span class="material-icons"> account_circle </span>
+      </div>
+    </div>
+    <div class="mainBody">
+      <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"/>
+
+      <div class="search">
+        <div class="busqueda">
+          <span class="material-icons"> search </span>
+          <input type="text" />
+          <span class="material-icons"> mic </span>
+        </div>
+
+        <div class="busqueda_botones">
+          <button>Buscar con Google</button>
+          <button>Me siento con suerte</button>
+        </div>
+      </div>
+  </body>
+</html>
